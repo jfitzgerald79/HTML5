@@ -75,6 +75,7 @@ background-color:#ddd;
   -o-text-overflow:ellipsis;
   padding-top:0px;
   margin-top:0px;
+  text-align: center
 }
 .esriPrint{
   padding:0px !important;
