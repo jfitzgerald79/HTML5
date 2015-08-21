@@ -1249,7 +1249,7 @@ function addLegend(layerInfo) {
     });
     var legendCp = new dijit.layout.ContentPane({
         title: i18n.tools.legend.title,
-        selected: false,
+        selected: true,
         region: 'center',
         id: "legendPanel"
     });
