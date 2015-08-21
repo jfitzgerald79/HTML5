@@ -960,7 +960,7 @@ function addLayerList(layers) {
             navigateStack('layerPanel');
         });
         var layerCp = new dijit.layout.ContentPane({
-            title: i18n.tools.legend.title,
+            title: i18n.tools.layer.title,
             selected: true,
             region: 'center',
             id: "layerPanel"
