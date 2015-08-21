@@ -957,26 +957,26 @@ function addLayerList(layers) {
         dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
         
         dojo.connect(button, 'onClick', function () {
-            navigateStack('legendPanel');
+            navigateStack('layerPanel');
         });
         var layerCp = new dijit.layout.ContentPane({
             title: i18n.tools.legend.title,
             selected: true,
             region: 'center',
-            id: "legendPanel"
+            id: "layerPanel"
         });
         
         dijit.byId('stackContainer').addChild(layerCp);
-        dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
+        dojo.addClass(dojo.byId('layerPanel'), 'panel_content');
 
-        var layerDijit = new esri.dijit.Legend({
+        var layerDijit = new esri.dijit.Layer({
             map: map,
             layerInfos: layerInfo
         }, dojo.create('div'));
 
         dojo.byId('legendPanel').appendChild(layerDijit.domNode);
 
-        navigateStack('legendPanel');
+        navigateStack('layerPanel');
         If (dojo.isIE === 8) {
             setTimeout(function () {
                layerDijit.startup();
