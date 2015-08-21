@@ -802,8 +802,6 @@ function addBasemapGalleryMenu() {
     });
 
 
-
-
     var button = new dijit.form.DropDownButton({
         label: i18n.tools.basemap.label,
         id: "basemapBtn",
@@ -958,7 +956,7 @@ function addLayerList(layers) {
         //dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
         dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
         
-        dojo.connect(legendTb, 'onClick', function () {
+        dojo.connect(button, 'onClick', function () {
             navigateStack('legendPanel');
         });
         var legendCp = new dijit.layout.ContentPane({
