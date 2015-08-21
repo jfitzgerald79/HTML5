@@ -1244,7 +1244,7 @@ function addLegend(layerInfo) {
 
     dojo.byId('webmap-toolbar-left').appendChild(legendTb.domNode);
 
-    dojo.connect(legendTb, '', function () {
+    dojo.connect(legendTb, 'onClick', function () {
         navigateStack('legendPanel');
     });
     var legendCp = new dijit.layout.ContentPane({
