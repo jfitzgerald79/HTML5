@@ -1244,7 +1244,7 @@ function addLegend(layerInfo) {
 
     dojo.byId('webmap-toolbar-left').appendChild(legendTb.domNode);
 
-    dojo.connect(legendTb, 'onClick', function () {
+    dojo.connect(legendTb, '', function () {
         navigateStack('legendPanel');
     });
     var legendCp = new dijit.layout.ContentPane({
@@ -1257,14 +1257,12 @@ function addLegend(layerInfo) {
     dijit.byId('stackContainer').addChild(legendCp);
     dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
     
-    //var legendDijit = new esri.dijit.Legend({
-        //map: map,
-       // layerInfos: layerInfo
-    //}, dojo.create('div'));
-
     var legendDijit = new esri.dijit.Legend({
-    });
+        map: map,
+        layerInfos: layerInfo
+    }, dojo.create('div'));
 
+    
     dojo.byId('legendPanel').appendChild(legendDijit.domNode);
     navigateStack('legendPanel');
     if (dojo.isIE === 8) {
