@@ -954,7 +954,7 @@ function addLayerList(layers) {
         });
 
         //dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
-        //dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
+        dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
         
         //dojo.connect(button, 'onClick', function () {
         //    navigateStack('legendPanel');
