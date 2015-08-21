@@ -954,7 +954,7 @@ function addLayerList(layers) {
         });
 
         //dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
-        dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
+        //dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
         
         //dojo.connect(button, 'onClick', function () {
         //    navigateStack('legendPanel');
@@ -979,7 +979,7 @@ function addLayerList(layers) {
         //navigateStack('legendPanel');
         //if (dojo.isIE === 8) {
          //   setTimeout(function () {
-               layerDijit.startup();
+         //      layerDijit.startup();
          //   }, 100);
         //} else {
         //    layerDijit.startup();
