@@ -950,7 +950,7 @@ function addLayerList(layers) {
             title: i18n.tools.layers.title,
            // checked: true,
             iconClass: "esriLayerIcon",
-            id: "layerBtn"
+            id: "layerBtn",
             dropDown: menu
         });
 
