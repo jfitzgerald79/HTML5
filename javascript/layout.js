@@ -1237,7 +1237,7 @@ function addLegend(layerInfo) {
         showLabel: true,
         label: i18n.tools.legend.label,
         title: i18n.tools.legend.title,
-        checked: true,
+        checked: false,
         iconClass: 'esriLegendIcon',
         id: 'legendButton'
     }, dojo.create('div'));
