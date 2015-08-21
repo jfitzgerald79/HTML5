@@ -943,7 +943,8 @@ function addLayerList(layers) {
             dropDown: menu
         });
 
-        dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
+        //dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
+        dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
     }
 }
 
