@@ -1256,11 +1256,14 @@ function addLegend(layerInfo) {
 
     dijit.byId('stackContainer').addChild(legendCp);
     dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
+    
+    //var legendDijit = new esri.dijit.Legend({
+        //map: map,
+       // layerInfos: layerInfo
+    //}, dojo.create('div'));
 
-   // var legendDijit = new esri.dijit.Legend({
-    //    map: map,
-     //   layerInfos: layerInfo
-   // }, dojo.create('div'));
+    var legendDijit = new esri.dijit.Legend({
+    });
 
     dojo.byId('legendPanel').appendChild(legendDijit.domNode);
     navigateStack('legendPanel');
