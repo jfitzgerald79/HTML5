@@ -1234,10 +1234,10 @@ function destroyOverview() {
 function addLegend(layerInfo) {
 
     var legendTb = new dijit.form.ToggleButton({
-        showLabel: true,
+        showLabel: false,
         label: i18n.tools.legend.label,
         title: i18n.tools.legend.title,
-        checked: false,
+        checked: true,
         iconClass: 'esriLegendIcon',
         id: 'legendButton'
     }, dojo.create('div'));
