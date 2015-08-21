@@ -933,18 +933,59 @@ function addLayerList(layers) {
                 }
             }));
         });
+        
+        
+        //ORIGINAL CODE 
+        //var button = new dijit.form.DropDownButton({
+        //    label: i18n.tools.layers.label,
+        //    id: "layerBtn",
+        //    iconClass: "esriLayerIcon",
+        //    title: i18n.tools.layers.title,
+        //    dropDown: menu
+        //});
+        
+        //ADDED THIS CODE 08-21-2015
 
-
-        var button = new dijit.form.DropDownButton({
+        var button = new dijit.form.ToggleButton({
+            showLabel:true,
             label: i18n.tools.layers.label,
             id: "layerBtn",
             iconClass: "esriLayerIcon",
             title: i18n.tools.layers.title,
-            dropDown: menu
+            //dropDown: menu
         });
 
         //dojo.byId('webmap-toolbar-center').appendChild(button.domNode);
         dojo.byId('webmap-toolbar-left').appendChild(button.domNode);
+        
+        dojo.connect(legendTb, 'onClick', function () {
+            navigateStack('legendPanel');
+        });
+        var legendCp = new dijit.layout.ContentPane({
+            title: i18n.tools.legend.title,
+            selected: true,
+            region: 'center',
+            id: "legendPanel"
+        });
+        
+        dijit.byId('stackContainer').addChild(legendCp);
+        dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
+
+        var legendDijit = new esri.dijit.Legend({
+            map: map,
+            layerInfos: layerInfo
+        }, dojo.create('div'));
+
+        dojo.byId('legendPanel').appendChild(legendDijit.domNode);
+
+        navigateStack('legendPanel');
+        if (dojo.isIE === 8) {
+            setTimeout(function () {
+               legendDijit.startup();
+            }, 100);
+        } else {
+            legendDijit.startup();
+        }
     }
 }
 
