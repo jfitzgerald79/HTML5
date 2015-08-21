@@ -966,8 +966,8 @@ function addLayerList(layers) {
             id: "legendPanel"
         });
         
-        dijit.byId('stackContainer').addChild(layerCp);
-        dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
+        //dijit.byId('stackContainer').addChild(layerCp);
+        //dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
 
         var layerDijit = new esri.dijit.Legend({
             map: map,
