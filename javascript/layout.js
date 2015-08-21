@@ -969,12 +969,12 @@ function addLayerList(layers) {
         dijit.byId('stackContainer').addChild(layerCp);
         dojo.addClass(dojo.byId('layerPanel'), 'panel_content');
 
-        var layerDijit = new esri.dijit.Layer({
+        var layerDijit = new esri.dijit.Layers({
             map: map,
             layerInfos: layerInfo
         }, dojo.create('div'));
 
-        dojo.byId('legendPanel').appendChild(layerDijit.domNode);
+        dojo.byId('layerPanel').appendChild(layerDijit.domNode);
 
         navigateStack('layerPanel');
         If (dojo.isIE === 8) {
