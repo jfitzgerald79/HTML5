@@ -959,30 +959,30 @@ function addLayerList(layers) {
         dojo.connect(button, 'onClick', function () {
             navigateStack('legendPanel');
         });
-        var legendCp = new dijit.layout.ContentPane({
+        var layerCp = new dijit.layout.ContentPane({
             title: i18n.tools.legend.title,
             selected: true,
             region: 'center',
             id: "legendPanel"
         });
         
-        dijit.byId('stackContainer').addChild(legendCp);
+        dijit.byId('stackContainer').addChild(layerCp);
         dojo.addClass(dojo.byId('legendPanel'), 'panel_content');
 
-        var legendDijit = new esri.dijit.Legend({
+        var layerDijit = new esri.dijit.Legend({
             map: map,
             layerInfos: layerInfo
         }, dojo.create('div'));
 
-        dojo.byId('legendPanel').appendChild(legendDijit.domNode);
+        dojo.byId('legendPanel').appendChild(layerDijit.domNode);
 
         navigateStack('legendPanel');
         if (dojo.isIE === 8) {
             setTimeout(function () {
-               legendDijit.startup();
+               layerDijit.startup();
             }, 100);
         } else {
-            legendDijit.startup();
+            layerDijit.startup();
         }
     }
 }
