@@ -948,7 +948,7 @@ function addLayerList(layers) {
             //showLabel:true,
             label: i18n.tools.layers.label,
             title: i18n.tools.layers.title,
-            checked: true,
+           // checked: true,
             iconClass: "esriLayerIcon",
             id: "layerBtn"
             dropDown: menu
