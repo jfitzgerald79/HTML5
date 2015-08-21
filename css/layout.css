@@ -121,6 +121,9 @@ background-color:#ddd;
 #legendPanel{
 /*width:100%;*/
 }
+#layerPanel{
+  /*width:100%;*/
+}
 #detailsPanel span,#legendPanel span{
   padding:0px;
 }
