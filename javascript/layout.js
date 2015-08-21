@@ -1234,7 +1234,7 @@ function destroyOverview() {
 function addLegend(layerInfo) {
 
     var legendTb = new dijit.form.ToggleButton({
-        showLabel: false,
+        showLabel: true,
         label: i18n.tools.legend.label,
         title: i18n.tools.legend.title,
         checked: true,
@@ -1249,7 +1249,7 @@ function addLegend(layerInfo) {
     });
     var legendCp = new dijit.layout.ContentPane({
         title: i18n.tools.legend.title,
-        selected: true,
+        selected: false,
         region: 'center',
         id: "legendPanel"
     });
