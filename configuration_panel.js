@@ -174,7 +174,7 @@
         "displayprintlegend": false,
         "displayprint": true,
         "displaysearch": true,
-        "displaylegend": true,
+        "displaylegend": false,
         "displaydetails": true,
         "displaylayerlist": true,
         "displaybasemaps": true,
