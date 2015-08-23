@@ -551,9 +551,9 @@ function initUI(response) {
             dojo.addClass(dojo.byId('detailPanel'), 'panel_content');
             navigateStack('detailPanel');
         }
-        if (configOptions.displaylegend === true) {
-            addLegend(layerInfo);
-        }
+        //if (configOptions.displaylegend === true) {
+        //    addLegend(layerInfo);
+       // }
         if (configOptions.leftPanelVisibility === false) {
             hideLeftPanel();
         }
