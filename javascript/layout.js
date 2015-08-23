@@ -554,6 +554,7 @@ function initUI(response) {
         if (configOptions.displaylegend === true) {
             addLegend(layerInfo);
         }
+        //set to false to show Legend or toggleButton when map initialized
         if (configOptions.leftPanelVisibility === true) {
             hideLeftPanel();
         }
