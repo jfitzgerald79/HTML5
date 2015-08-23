@@ -551,6 +551,7 @@ function initUI(response) {
             dojo.addClass(dojo.byId('detailPanel'), 'panel_content');
             navigateStack('detailPanel');
         }
+        //set to false to no show legend
         if (configOptions.displaylegend === true) {
             addLegend(layerInfo);
         }
