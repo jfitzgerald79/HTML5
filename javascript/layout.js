@@ -554,7 +554,7 @@ function initUI(response) {
         if (configOptions.displaylegend === true) {
             addLegend(layerInfo);
         }
-        if (configOptions.leftPanelVisibility === false) {
+        if (configOptions.leftPanelVisibility === true) {
             hideLeftPanel();
         }
         dijit.byId('mainWindow').resize();
