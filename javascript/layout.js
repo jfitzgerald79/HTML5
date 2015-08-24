@@ -946,11 +946,11 @@ function addLayerList(layers) {
         
         //ADDED THIS CODE 08-21-2015
 
-        var button = new dijit.form.ToggleButton({
-            showLabel:true,
+        var button = new dijit.form.DropDownButton({
+           // showLabel:true,
             label: i18n.tools.layers.label,
             title: i18n.tools.layers.title,
-            checked: true,
+            //checked: true,
             iconClass: "esriLayerIcon",
             id: "layerBtn",
             dropDown: menu
