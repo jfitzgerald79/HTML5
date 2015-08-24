@@ -946,7 +946,7 @@ function addLayerList(layers) {
         
         //ADDED THIS CODE 08-21-2015
 
-        var button = new dijit.form.DropDownButton({
+        var button = new dijit.form.ToggleButton({
             //showLabel:true,
             label: i18n.tools.layers.label,
             title: i18n.tools.layers.title,
