@@ -4,7 +4,6 @@ html,body {
   overflow:hidden;
   margin:0;
   padding:0;
-
 }
 /*The image specified for the body is used to apply the gradient background to the entire page*/
 body {
@@ -39,8 +38,6 @@ background-color:#ddd;
 .LocateButton .zoomLocateButton:hover {
  background-color: #CEE1EC;
 }
-
-
 .notembed{
   height:98%;
   width:98%;
