@@ -2,7 +2,7 @@
 /*The image specified for the body is used to apply the gradient background to the entire page*/
 body {
   background-color: rgba (204,229,255,0.5);
-  background-image:url(../images/Contour_2.png);
+  background-image:url(../images/Contour_Blue.png);
   /*opacity:0.5;*/
   
   /*background:url(../images/blue/body_bg.png) repeat-x #97a7b8;*/
