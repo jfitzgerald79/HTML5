@@ -2,12 +2,13 @@
 /*The image specified for the body is used to apply the gradient background to the entire page*/
 body {
   background:url(../images/Contour_2.png);
-  opacity:0.5;
+  /*opacity:0.5;*/
   
   /*background:url(../images/blue/body_bg.png) repeat-x #97a7b8;*/
 }
 #leftPane {
   background-color:#e9eef2;
+  opacity:0.5;
 }
 .HomeButton .home{
   background-color: #6788A2;
