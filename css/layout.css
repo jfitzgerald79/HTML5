@@ -4,6 +4,7 @@ html,body {
   overflow:hidden;
   margin:0;
   padding:0;
+  opacity:0.5;
 
 }
 /*The image specified for the body is used to apply the gradient background to the entire page*/
@@ -12,7 +13,6 @@ body {
   color:#333;
   margin:0px;
   padding:0px;
-  opacity:0.5;
 }
 
 .HomeButton .home{
@@ -40,8 +40,6 @@ background-color:#ddd;
 .LocateButton .zoomLocateButton:hover {
  background-color: #CEE1EC;
 }
-
-
 .notembed{
   height:98%;
   width:98%;
