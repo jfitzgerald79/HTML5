@@ -1,7 +1,7 @@
 
 /*The image specified for the body is used to apply the gradient background to the entire page*/
 body {
-  background:url(../images/Contour_2.png) repeat-x #97a7b8;
+  background:url(../images/Contour_2.png);
   /*background:url(../images/blue/body_bg.png) repeat-x #97a7b8;*/
 }
 #leftPane {
