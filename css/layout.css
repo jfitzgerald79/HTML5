@@ -4,8 +4,6 @@ html,body {
   overflow:hidden;
   margin:0;
   padding:0;
-  opacity:0.5;
-
 }
 /*The image specified for the body is used to apply the gradient background to the entire page*/
 body {
