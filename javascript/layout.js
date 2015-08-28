@@ -117,6 +117,7 @@ dojox.layout.FloatingPane.prototype.show = function (callback) {
     configOptions.displaysearch = (configOptions.displaysearch === "true" || configOptions.displaysearch === true) ? true : false;
     configOptions.displaybookmarks = (configOptions.displaybookmarks === "true" || configOptions.displaybookmarks === true) ? true : false;
     configOptions.displaylayerlist = (configOptions.displaylayerlist === "true" || configOptions.displaylayerlist === true) ? true : false;
+    configOptions.displaylayer = (configOptions.displaylayer === "true" || configOptions.displaylayer === true) ? true : false;
     configOptions.displaydetails = (configOptions.displaydetails === "true" || configOptions.displaydetails === true) ? true : false;
     configOptions.displaytimeslider = (configOptions.displaytimeslider === "true" || configOptions.displaytimeslider === true) ? true : false;
     configOptions.displayelevation = (configOptions.displayelevation === "true" || configOptions.displayelevation === true) ? true : false;
