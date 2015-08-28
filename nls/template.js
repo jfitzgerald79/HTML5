@@ -87,6 +87,10 @@ define({
       title: "Display layer list",
       label: "Layers"
     },
+    layersII: {
+      title: "Display layer list",
+      label: "Display Layers"
+    },
     search: {
       title: "Find address or place",
       popupTitle: "Location",
