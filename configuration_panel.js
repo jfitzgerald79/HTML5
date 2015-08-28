@@ -85,6 +85,11 @@
             "tooltip": ""
         }, {
             "type": "boolean",
+            "fieldName": "displaylayer",
+            "label": "Layer *",
+            "tooltip": ""
+        }, {    
+            "type": "boolean",
             "fieldName": "displaylayerlist",
             "label": "Layer List *",
             "tooltip": ""
